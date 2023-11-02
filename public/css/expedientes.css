@@ -35,7 +35,7 @@ header{
     align-items: center;
 }
 .form-search button{
-   margin: -1px 10px 10px;
+   margin: 9px 10px 10px;
    padding: 5px;
    border: none;
    border-radius: 5px;
@@ -59,7 +59,7 @@ header{
     /* margen derecho entre los elementos */
 }
 
-#nav-navegation li.rr a {
+#nav-navegation li.rr a{
     color: #f48c53;
 }
 
@@ -94,26 +94,6 @@ header{
     }
 }
 
-/* Estilos para el formulario de búsqueda */
-#nav-navegation form {
-    display: flex;
-    align-items: center;
-}
-
-#nav-navegation input[type="text"] {
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #ccc;
-}
-
-#nav-navegation button {
-    background-color: #fff;
-    color: #000000;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
 h1 {
     margin-top: 35px;
     text-align: center;
@@ -122,37 +102,6 @@ h1 {
     color: #000000;
 }
 
-/* css para los elementos de los selectores de fecha y hora*/
-.datetime-container {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.datetime-label {
-    font-size: 16px;
-    margin-left: 50px;
-    margin-right: 10px;
-}
-
-.datetime-picker {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 12px;
-    margin-right: 100px;
-    margin-left: 10px;
-}
-
-.datetime-container h4 {
-    text-align: left;
-    width: 100%;
-    margin-bottom: 20px;
-    margin-left: 280px;
-}
 
 form {
     margin-left: 390px;
@@ -167,23 +116,6 @@ label {
     margin-bottom: 5px;
 }
 
-select,
-textarea,
-input[type="text"] {
-    width: 100%;
-    /* Ancho completo para elementos de entrada */
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-textarea {
-    resize: vertical;
-    /* Permitir la redimensión vertical del cuadro de texto */
-}
 
 /* Estilo para el botón naranja */
 .orange-button {
@@ -202,29 +134,6 @@ textarea {
     /* Cambiar el color al pasar el cursor */
 }
 
-/* Estilo para el sistema de rejilla (Grid) */
-.grid-container {
-    margin-left: 350px;
-    margin-right: 350px;
-    display: grid;
-    grid-template-columns: auto auto;
-    /* Dos columnas con tamaños iguales */
-    grid-gap: 40px;
-    /* Espacio entre elementos */
-}
-
-.grid-item {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para el último elemento que ocupa toda la fila */
-.full-width {
-    grid-column: 1 / -1;
-    /* Ocupa todas las columnas disponibles */
-}
-
-
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -235,11 +144,46 @@ textarea {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: absolute;
     width: 100%;
     background-color: #181717;
     color: white;
     font-size: .7rem;
     bottom: 0;
+}
+.expediente {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.expediente input[type="checkbox"] {
+    display: none;
+}
+.expediente input[type="checkbox"] + label {
+    cursor: pointer;
+}
+.expediente input[type="checkbox"] + label::before {
+    content: "\2713"; /* ✓ character */
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    visibility: hidden;
+}
+.expediente input[type="checkbox"]:checked + label::before {
+    visibility: visible;
+}
+.detalles {
+    display: none;
+}
+.expediente input[type="checkbox"]:checked + label + .detalles {
+    display: block;
+}
+.eliminar {
+    color:#f47434;
+    cursor: pointer;
+    display: none;
+}
+.expediente input[type="checkbox"]:checked + label + .detalles + .eliminar {
+    display: inline;
 }
