@@ -9,10 +9,10 @@
     margin: 0;
     max-width: 100%;
     max-height: 100%;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Open Sans', sans-serif;
 }
 
-#pageInicioSesion{
+#pageInicioSesion {
     background-image: url("../../public/img/backgroundInicioSesion.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -20,24 +20,25 @@
 
 #seleccionDeInicio {
     display: flex;
+    justify-content: center;
     position: absolute;
-    top: 30%;
-    left: 30%;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    height: 50%;
+    top: 25%;
+    left: 35%;
+    box-shadow: 0 1rem 4rem rgb(0, 0, 0);
 }
 
-#text_inicia_sesion{
+#text_inicia_sesion {   
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(58, 58, 65);
     background-color: rgba(255, 255, 255, 0.72);
     padding: 10px;
-    color: var(--footer-bg-color);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+    
 }
 
-#contenedor_opciones{
+#contenedor_opciones {
     max-width: 900px;
     display: flex;
     flex-direction: column;
@@ -45,24 +46,26 @@
     align-items: center;
     padding: 10%;
     background-color: gray;
-    border-radius: 0px 10px 10px 0px;
+    /* border-radius: 0px 10px 10px 0px; */
 
 }
 
-
-#crearCuenta{
+#crearCuenta {
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#crearCuenta form, #iniciarSesion form{
+#crearCuenta form,
+#iniciarSesion form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    color: red;
 }
 
-#crearCuenta form a, #iniciarSesion form a{
+#crearCuenta form a,
+#iniciarSesion form a {
     text-decoration: none;
     cursor: pointer;
     color: white;
@@ -70,22 +73,32 @@
     font-size: small;
 }
 
-#crearCuenta form a:hover, #iniciarSesion form a:hover{
+#crearCuenta form a:hover,
+#iniciarSesion form a:hover {
     color: #f47434;
 }
 
-#crearCuenta form input, #iniciarSesion form input{
-    background-color: white;
+#crearCuenta form input,
+#iniciarSesion form input {
+    background-color: transparent;
     text-decoration: none;
-    border: none;
+    border: 0px;
     padding: 5px;
     margin: 5px;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    
+    border-bottom: #181717 1px solid;
+    color: white;
+    outline: none;
 }
 
-#crearCuenta form button, #iniciarSesion form button{
+
+#crearCuenta form input::placeholder,
+#iniciarSesion form input::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#crearCuenta form button,
+#iniciarSesion form button {
     cursor: pointer;
     text-decoration: none;
     background-color: var(--main-bg-color);
@@ -93,14 +106,19 @@
     font-size: small;
     border-radius: 5px;
     padding: 5px;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
 }
 
-#crearCuenta form button:hover, #iniciarSesion form button:hover{
-    text-decoration: none;
+#crearCuenta form button:hover,
+#iniciarSesion form button:hover {
     background-color: var(--hover-bg-color);
 }
 
-.hiddens_opciones{
+#iniciarSesion h3 p{
+    color: #181717;
+}
+
+.hiddens_opciones {
     display: none;
 }
 
