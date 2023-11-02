@@ -152,31 +152,32 @@ footer {
     font-size: .7rem;
     bottom: 0;
 }
-.expediente {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+.casos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
-.expediente input[type="checkbox"] {
+
+.caso input[type="checkbox"] {
     display: none;
 }
-.expediente input[type="checkbox"] + label {
+.caso input[type="checkbox"] + label {
     cursor: pointer;
 }
-.expediente input[type="checkbox"] + label::before {
+.caso input[type="checkbox"] + label::before {
     content: "\2713"; /* ✓ character */
     display: inline-block;
     font-size: 20px;
     margin-right: 10px;
     visibility: hidden;
 }
-.expediente input[type="checkbox"]:checked + label::before {
+.caso input[type="checkbox"]:checked + label::before {
     visibility: visible;
 }
 .detalles {
     display: none;
 }
-.expediente input[type="checkbox"]:checked + label + .detalles {
+.caso input[type="checkbox"]:checked + label + .detalles {
     display: block;
 }
 .eliminar {
@@ -184,6 +185,6 @@ footer {
     cursor: pointer;
     display: none;
 }
-.expediente input[type="checkbox"]:checked + label + .detalles + .eliminar {
+.caso input[type="checkbox"]:checked + label + .detalles + .eliminar {
     display: inline;
 }

@@ -59,7 +59,7 @@ header{
     /* margen derecho entre los elementos */
 }
 
-#nav-navegation li.rr {
+#nav-navegation li.rr a {
     color: #f48c53;
 }
 
