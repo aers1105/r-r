@@ -1,0 +1,118 @@
+:root {
+    --main-bg-color: #f48c53;
+    --hover-bg-color: #f47434;
+    --footer-bg-color: #181717;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#pageInicioSesion{
+    background-image: url("../../public/img/backgroundInicioSesion.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#seleccionDeInicio {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#text_inicia_sesion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.72);
+    padding: 10px;
+    color: var(--footer-bg-color);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+#contenedor_opciones{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    background-color: gray;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+
+#crearCuenta{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#crearCuenta form, #iniciarSesion form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#crearCuenta form a, #iniciarSesion form a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+    font-size: small;
+}
+
+#crearCuenta form a:hover, #iniciarSesion form a:hover{
+    color: #f47434;
+}
+
+#crearCuenta form input, #iniciarSesion form input{
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    
+}
+
+#crearCuenta form button, #iniciarSesion form button{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--main-bg-color);
+    border: none;
+    font-size: small;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#crearCuenta form button:hover, #iniciarSesion form button:hover{
+    text-decoration: none;
+    background-color: var(--hover-bg-color);
+}
+
+.hiddens_opciones{
+    display: none;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    color: white;
+    font-size: .7rem;
+    bottom: 0;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Agendar cita - R&R</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/sources/img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/crearCita.style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="nav-navegation">
+                <li class="rr"><a href="../index.html">R&R ABOGADOS Y ASOCIADOS</a></li>
+                <li><a href="#">CITAS</a></li>
+                <li><a href="#">EXPEDIENTES</a></li>
+                <li><a href="#">CASOS</a></li>
+                <li><a href="#">REPORTES</a></li>
+                <li>
+
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-search">
+            <form action="#" method="post" class="form-search">
+                <input type="text" placeholder="Búsqueda de citas">
+                <button type="submit" id="nav-search_button">Buscar</button>
+            </form>
+        </nav>
+    </header>
+    <h1>AGENDAR CITA</h1>
+    <div class="main-container">
+        <div class="datetime-container">
+            <h4>Selecciona fecha y hora: </h4>
+            <label for="fecha" class="datetime-label">Fecha:</label>
+            <input type="date" id="fecha" class="datetime-picker">
+            <label for "hora" class="datetime-label">Hora:</label>
+            <input type="time" id="hora" title="hora" class="datetime-picker">
+        </div>
+        <div class="form-container">
+            <form class="grid-container">
+                <div class="select-container grid-item">
+                    <div class="left-align">
+                        <label for="abogado">Abogado:</label>
+                        <select id="nombreAbogados" title="nombreAbogados" name="nombreAbogados" required>
+                            <option value="Claudia Patricia Davalos">Claudia Patricia Davalos</option>
+                            <option value="abogado2">Hector g</option>
+                            <option value="abogado3">Alfredo N</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="right-align grid-item">
+                    <label for="nombreCliente">Nombre del Cliente:</label>
+                    <input type="text" id="nombreCliente" name="nombreCliente" required>
+                </div>
+
+                <div class="left-align grid-item">
+                    <label for="motivo">Motivo:</label>
+                    <textarea id="motivo" name="motivo" rows="4" required></textarea>
+                </div>
+                <div class="select-container grid-item">
+                    <div class="right-align">
+                        <label for="cubiculo">Selecciona un cubículo:</label>
+                        <select id="numeroCubiculo" required title="numeroCubiculo">
+                            <option value="1">Cubículo 1</option>
+                            <option value="2">Cubículo 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="full-width">
+                    <button type="submit" class="orange-button">Crear Cita</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="footer_email">
+          <p id="footer_email_contacto">Contacto</p>
+          <p id="footer_email_email">rrabogados@example.com</p>
+        </div>
+        <div id="footer_phone">
+          <p class="footer_phone_phone">Telefono</p>
+          <p class="footer_phone_numberPhone">(644) 228 9951</p>
+        </div>
+        <div id="footer_info">
+          <p class="footer_phone_">Sitema de gestion juridica R&R Abogados y Asociados</p>
+        </div>
+      </footer>
+    
+</body>
+
+</html>
