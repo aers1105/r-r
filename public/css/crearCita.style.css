@@ -15,10 +15,6 @@ header{
     background-color: #fff;
 }
 
-/* Estilos generales del body */
-body {
-
-  }
 
 /* Estilos para el contenedor de navegación */
 #nav-navegation {
@@ -54,9 +50,6 @@ body {
     background-color: #f47434;
 }
 
-.nav-search{
-
-}
 
 /* Estilos para los elementos de navegación */
 #nav-navegation li {
@@ -66,7 +59,7 @@ body {
     /* margen derecho entre los elementos */
 }
 
-#nav-navegation li.rr a {
+#nav-navegation li.rr {
     color: #f48c53;
 }
 
